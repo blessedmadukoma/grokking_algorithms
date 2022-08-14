@@ -15,9 +15,8 @@ func QuickSortMine(array []int) []int {
 		for _, v := range array[1:] {
 			if v <= pivot {
 				less = append(less, v)
-			} else {
-				greater = append(greater, v)
 			}
+				greater = append(greater, v)
 		}
 
 		sortedArray := QuickSortMine(less)
